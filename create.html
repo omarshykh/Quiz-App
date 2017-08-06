@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="stylesheet/create.css">
+    <title>Create Quiz</title>
+</head>
+<body onload="startTime(),setDate(),setUserName()">
+
+        <!-- Navbar starts-->
+    <nav class="navbar navbar-inverse" style="background-color:rgb(128,92,160);border-style:none">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="javascript:void(0)"><img src="http://res.cloudinary.com/oi12345/image/upload/v1500414032/logo_jf6nbj.png" alt="Logo" height="30" width="35"></a>
+                <a class="navbar-brand" href="javascript:void(0)" style="font-size:17px;padding-top:17px;color:white">Quiz App</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:void(0)" id="username" style="color:white"></a></li>
+                    <li><a href="javascript:void(0)" id="logout"  style="color:white"></a></li>
+                    <li><a href="javascript:void(0)" id="date" style="color:white"></a></li>
+                    <li><a href="javascript:void(0)" id="time" style="color:white" class="hoverNav"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends-->
+    
+    <!--Screen division starts-->
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                    <div id="creatediv">
+        <table>
+            <tr>
+                <td colspan="2" style="font-size:15px;color:rgba(0,0,0,0.8);">
+                    <h2 style="text-align:center">Create Quiz</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-size:15px;color:rgba(0,0,0,0.8);">
+                    The values of the fields with * sign must be a number.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="labels">Quiz Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="quizname" id="quizname" class="fields"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label class="labels">Syllabus:</label>
+                </td>
+                <td>
+                    <input type="text" name="syllabus" id="syllabus" class="fields"/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label class="labels" > Instructions: </label>
+                </td>
+                <td>
+                    <textarea rows="4" cols="18" class="fields" id="instruc"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label class="labels">*Marks:</label>
+                </td>
+                <td>
+                    <input type="text" name="marks" id="marks" class="fields short"/> marks
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label class="labels">*Time:</label>
+                </td>
+                <td>
+                    <input type="text" name="time" id="timefield" class="fields short"/> minutes
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label class="labels">*Questions:</label>
+                </td>
+                <td>
+                    <input type="text" name="quest" id="quest" class="fields short"/> questions
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="labels">*Passing Percentage:</label>
+                </td>
+                <td>
+                    <input type="text" name="passing" id="passing" class="fields short"/> %
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+                <td style="text-align:right">
+                   <button onclick="myfunc()" id="sumbitbutton">Sumbit Quiz Data</button>
+                </td>
+            </tr>
+        </table>
+         </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    <!--Screen division ends-->
+
+    <script src="js/create.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    background-image: url('http://res.cloudinary.com/oi12345/image/upload/v1500414042/index_pidwlh.png');
+    background-repeat: no-repeat;
+}
+#name{
+    margin-left:58px;
+}
+#email{
+    margin-left:58px;
+}
+#password{
+    margin-left:36px;
+}
+#designation{
+    margin-left:21px;
+}
+#submitbutton{
+    margin-left:231px;
+    border-radius: 3px;
+    border: 1px solid #fff8dc;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+}
+#submitbutton:hover,submitbutton:visited{
+    background-color: #fff8dc;
+    color: #000000;
+    font-size: 16px;
+}
+.fields{
+    border-radius: 5px;
+    border-color: #fff8dc;
+    border-width: 2px;
+    background-color: rgba(255,255,255,0.3);
+    color: #000000;
+}
+#myDiv{
+    margin-left:350px;
+    margin-top:90px;
+    width:46%;
+    padding:20px;font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(255,255,255,0.3);
+    color:#ffffff;
+}
+#heading{
+    color: rgba(0,0,0,0.8);
+}
+label{
+    color: rgba(0,0,0,0.8);
+}
